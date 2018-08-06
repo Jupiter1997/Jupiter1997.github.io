@@ -1,18 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>7777</title>
-    <script src="lib/easeljs-0.7.1.min.js"></script>
-    <script src="lib/tweenjs-0.5.1.min.js"></script>
-    <script src="lib/soundjs-0.5.2.min.js"></script>
-    <script src="lib/preloadjs-0.4.1.min.js"></script>
-    <script src="js/setupEvn.js"></script>
+    <!--
+        Authorname:BixinChen
+        Student Number:300716064
+        Last Modified by:Chen
+        Date last Modified:2018/7/30
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CreateJS Demo with TypeScript</title>
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="/Content/app.css">
 </head>
+<body>
+    <!-- Game Lives Here -->
+    <canvas id="canvas" width="900" height="450"></canvas>
 
-<body onload="init()">
+    <!-- JavaScript Section -->
+    <!-- CreateJS Libraries -->
+    <script src="/node_modules/easeljs/lib/easeljs.min.js"></script>
+    <script src="/node_modules/tweenjs/lib/tweenjs.min.js"></script>
+    <script src="/node_modules/soundjs/lib/soundjs.min.js"></script>
+    <script src="/node_modules/preloadjs/lib/preloadjs.min.js"></script>
+    
 
-<canvas id="canvas" width="900" height="450" style="border: black solid 1px"></canvas>
 
+    <!-- Game Scripts -->
+
+    <!-- Config Scripts -->
+    <script src="/Scripts/config/scene.js"></script>
+    <script src="/Scripts/config/screen.js"></script>
+
+    <!-- Math Scripts -->
+    <script src="/Scripts/math/Vec2.js"></script>
+
+    <!-- Manager Scripts -->
+    <script src="/Scripts/managers/game.js"></script>
+    <script src="/Scripts/managers/collision.js"></script>
+    <script src="/Scripts/managers/collision_2.js"></script>
+    <script src="/Scripts/managers/scoreboard.js"></script>
+    <script src="/Scripts/managers/twinkling.js"></script>
+    <script src="/Scripts/managers/blinking.js"></script>
+    <script src="/Scripts/managers/explosion_type_0.js"></script>
+    <script src="/Scripts/managers/explosion_type_1.js"></script>
+    <script src="/Scripts/managers/tracking_bullets.js"></script>
+
+    <!--Common Game Objects -->
+
+    <script src="/Scripts/objects/common/gameobject.js"></script>
+    <script src="/Scripts/objects/common/label.js"></script>
+    <script src="/Scripts/objects/common/button.js"></script>
+    <script src="/Scripts/objects/common/scene.js"></script>
+
+    
+    <!-- player Game Objects-->
+    <script src="/Scripts/objects/player/player_plane.js"></script>
+    <script src="/Scripts/objects/player/player_plane_type_0.js"></script>
+    <Script src="Scripts/objects/player/player_explosion_type_0.js"></Script>
+    <Script src="Scripts/objects/player/player_explosion_type_1.js"></Script>
+    <script src="/Scripts/objects/player/player_bullet_type_0.js"></script>
+
+    <!-- supply-->
+    <script src="/Scripts/objects/supply/supply.js"></script>
+    <script src="/Scripts/objects/supply/parachute.js"></script>
+
+    <!-- explosion-->
+    <script src="/Scripts/objects/explosion/explosion_type_0.js"></script>
+    <!-- level 1 Game Objects-->
+    <script src="/Scripts/objects/level1/background_sky_lv1.js"></script>
+    <script src="/Scripts/objects/level1/background_wall_lv1.js"></script>
+    <script src="/Scripts/objects/level1/background_tree_lv1.js"></script>
+    <script src="Scripts/objects/level1/background_slide_lv1.js"></script>
+    <script src="Scripts/objects/level1/background_street_lamp_lv1.js"></script>
+    
+
+    <script src="/Scripts/objects/level1/enemy_ufo_lv1.js"></script>
+    <script src="/Scripts/objects/level1/enemy_bullet_Laser_lv1.js"></script> 
+    <script src="Scripts/objects/level1/enemy_alien_kid_lv1.js"></script>
+    <script src="Scripts/objects/level1/enemy_ufo_crack_lv1.js"></script>
+    <script src="Scripts/objects/level1/enemy_bullet_stone_lv1.js"></script>
+    <script src="Scripts/objects/level1/enemy_ufo_somke_lv1.js"></script>
+
+
+    <!-- Scene Scripts -->
+    <script src="/Scripts/scenes/end.js"></script>
+    <script src="/Scripts/scenes/play.js"></script>
+    <script src="/Scripts/scenes/start.js"></script>
+    <script src="/Scripts/scenes/instruction.js"></script>
+
+    <!-- Core Script -->
+    <script src="/Scripts/core/game.js"></script>
 </body>
-
 </html>
